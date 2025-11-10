@@ -16,6 +16,8 @@ phases:
 
   pre_build:
     commands:
+      - echo "Listing files in working directory for verification..."
+      - ls -la
       - echo "Initializing Terraform..."
       - terraform init -input=false
 
